@@ -1,2 +1,28 @@
 # README
 its a README about all knowlege and some else things
+
+# preview mongo DB  /2016.9.6
+### mongod的基本概念
+
+数据库 MongoDB的单个实例可以容纳多个独立的数据库，比如一个学生管理系统就可以对应一个数据库实例
+集合 数据库是由集合组成的,一个集合用来表示一个实体,如学生集合
+文档 集合是由文档组成的，一个文档表示一条记录,比如一位同学张三就是一个文档
+
+
+### 启动
+1.  mongod --dbpath=./date 启动服务器
+2.  命令窗体中输入 mongo --host=127.0.0.1 或者          mongo 按回车键 启动客户端连接服务器
+3.  mkdir -p data/db 可直接创建连续的文件夹
+
+### 启动操作页面
+``` 用户图形接口curl ```
+
+``` 命令行接口CLI   ```
+
+对于MongoDB 我们使用mongo shell 这个命令行来操作
+$ mongo
+
+### 创建一个数据库
+$ ``` use test   创建test数据库 ```
+
+``` db.createCollection('post')  创建集合 ```
